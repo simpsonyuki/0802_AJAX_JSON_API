@@ -7,21 +7,49 @@
   font-family: "微軟正黑體";
 }
 
+body {
+  background-color: #888;
+}
+
+.name {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+}
+
+#restaurant {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
 #restaurant #box {
-  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  padding: 20px 30px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 #restaurant #box h1 {
-  line-height: 4rem;
+  margin-bottom: 2rem;
 }
 
 #restaurant #box h2 {
   line-height: 2rem;
+  color: indianred;
 }
 
 #restaurant #box h3 {
   line-height: 2rem;
+  color: #666;
+}
+
+#restaurant #box hr {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */

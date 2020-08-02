@@ -4,21 +4,42 @@
     box-sizing: border-box;
     font-family: "微軟正黑體";
 }
+body{
+    background-color: #888;
+}
+.name{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    
+}
 
 #restaurant{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 
     #box{
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
-        padding: 30px;
+        background-color: #fff;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+        padding: 20px 30px ;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
 
         h1{
-            line-height: 4rem;
+            margin-bottom: 2rem;
         }
         h2{
             line-height: 2rem;
+            color: indianred;
         }
         h3{
             line-height: 2rem;
+            color: #666;
+        }
+        hr{
+            margin: 20px 0;
         }
     }
 }
